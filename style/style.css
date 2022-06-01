@@ -1,0 +1,113 @@
+/* general *******************************************/
+/****************************************************/
+:root {
+	--title-color: #000;
+	--indent: 50px;
+	--indent2: 100px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+
+.wrapp {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.main {
+	padding-bottom: var(--indent2);
+}
+
+._mt {
+	margin-top: var(--indent2);
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	padding: 0 var(--indent);
+}
+
+.title {
+	color: var(--title-color);
+	font-size: 70px;
+	font-weight: 800;
+}
+
+header {
+	margin-bottom: 100px;
+}
+
+p {
+	font-size: 30px;
+}
+
+.section {
+	height: auto;
+	padding: 30px 0;
+}
+
+.section__slider {
+	/* display: flex; */
+}
+
+/* scroll trigger *************************/
+/*****************************************/
+.gsap_slider {
+	height: 80vh;
+}
+
+.gsap__bl {
+	width: 100%;
+}
+
+.gsap__inner {
+	display: flex;
+	width: calc(100% + var(--indent));
+	flex: 0 0 auto;
+	overflow: hidden;
+}
+
+.gsap__track {
+	display: flex;
+	flex: 0 0 auto;
+	will-change: transform;
+	transition: 3.5s cubic-bezier(.075, 1, .25, 1);
+}
+
+.gsap__item {
+	flex: 0 0 auto;
+	width: 800px;
+	height: 100%;
+	background: #000;
+	will-change: transform;
+	overflow: hidden;
+}
+
+.gsap__item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gsap__item+.gsap__item {
+	margin-left: 30px;
+}
+
+.gsap_slider .content,
+.gsap_h,
+.gsap__bl,
+.gsap__inner,
+.gsap__item {
+	height: 100%;
+}
