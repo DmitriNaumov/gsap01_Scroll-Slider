@@ -27,8 +27,8 @@ $(function () {
                 end: "+=1000px",
                 // end: () => '+=' + gsapTrack,
                 scrub: true,
-                pin: true,
-                markers: true
+                pin: true
+                // markers: true
             },
             x: "-" + scrollSliderTransform + "px"
         });

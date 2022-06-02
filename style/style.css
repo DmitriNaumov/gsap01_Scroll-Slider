@@ -101,7 +101,7 @@ p {
 }
 
 .gsap__item+.gsap__item {
-	margin-left: 30px;
+	margin-left: var(--indent);
 }
 
 .gsap_slider .content,
